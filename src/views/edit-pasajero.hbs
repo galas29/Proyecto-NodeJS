@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+
+</head>
+
+<body>
+    <div class="col container">
+        <form action="/edit/{{user._id}}" method="POST">
+            <div class="mb-4">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" name="name" placeholder="Escriba su nombre completo"
+                    value="{{user.nombres}}">
+            </div>
+            <div class="mb-4">
+                <label for="apellido" class="form-label">Correo</label>
+                <input type="text" class="form-control" name="correo" placeholder="ejemplo@ejemplo.cl"
+                    value="{{user.apellidos}}">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="form-label">Contraseña</label>
+                <input type="correo" class="form-control" name="password" placeholder="Debe ser almenos de 6 carácteres">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="form-label">Confirmar contraseña</label>
+                <input type="telefono" class="form-control" name="confirm_password" placeholder="Deben ser iguales">
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Editar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta</title>
+    <link rel="stylesheet" href="/css/ruta.css">
+</head>
+
+<body id="banner">
+    {{#if rutas}}
+    <iframe width="80%" height="80%" style="border:0" loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyABCU4BNStyCkdBIpoZNcADTldfDmXDyNI
+                &origin={{corigen}} {{dorigen}} {{numeroo}}
+                &destination={{cdestino}} {{ddestino}} {{numerod}}
+                &mode=driving">
+    </iframe>
+    {{/if}}
+
+    {{#each errors}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{text}}
+        <strong></strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {{/each}}
+    <div class="container-fluid cpage" >
+        <form action="/agregar/viaje" method="POST" class="form-ruta">
+            <h1 class="mb-4"> Viajemos</h1>
+            <div class="mb-4">
+                <label class="form-label">Comuna de origen</label>
+                <input type="text" class="form-control rounded-pill input-line " name="corigen">
+            </div>
+            <div class="mb-4">
+                <span class="name-input" id="sizing-addon1">Direccion origen</span>
+                <input type="text" class="form-control rounded-pill input-line" name="dorigen">
+            </div>
+            <div class="mb-4">
+                <span class="name-input">Comuna de destino</span>
+                <input type="text" class="form-control rounded-pill input-line"  name="cdestino">
+            </div>
+            <div class="mb-4">
+                <span class="name-input">Direccion de destino</span>
+                <input type="text" class="form-control rounded-pill input-line"  name="ddestino">
+            </div>
+            <button type="submit" class="btn btn-dark rounded-pill">Viajar</button>
+        </form>
+    </div>
+</body>
+
+</html>

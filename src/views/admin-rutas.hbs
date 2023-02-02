@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/tabla.css">
+    <!-- Boxicons CDN link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="col">
+        <h1>Datos Pasajeros</h1>
+        <table class="table table-striped table-secondary  table-bordered">
+            <thead>
+                <tr>
+                    <th class="bg-info">Comuna</th>
+                    <th class="bg-info">Direccion origen</th>
+                    <th class="bg-info">Comuna</th>
+                    <th class="bg-info">Direccion destino</th>
+                    <th class="bg-info">Viajes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each rutas}}
+                <tr>
+                    <td>{{corigen}}</td>
+                    <td>{{dorigen}}</td>
+                    <td>{{cdestino}}</td>
+                    <td>{{ddestino}}</td>
+                    <td>
+                        <a href="/mapa/{{_id}}">Viaje</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>

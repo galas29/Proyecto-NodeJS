@@ -1,0 +1,34 @@
+{
+  "name": "actualizacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chilean-rutify": "^2.1.0",
+    "connect-flash": "^0.1.1",
+    "consolidate": "^0.16.0",
+    "express": "^4.18.2",
+    "express-es6-template-engine": "^2.2.3",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "html": "^1.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.8.0",
+    "moongose": "^1.0.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sweetalert": "^2.1.2",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

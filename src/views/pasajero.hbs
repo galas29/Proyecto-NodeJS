@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="/css/pasajero.css">
+    <link rel="stylesheet" href="/css/rut.css">
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <meta name="viewport" content="width =divice-width, initial-scale = 1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;400;900&family=Poppins&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <section id="features">
+        {{#if error}}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{error}}
+            <strong></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {{/if}}
+
+        {{#each errors}}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{text}}
+            <strong></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {{/each}}
+        <div class="feature-box">
+            <div class="features">
+                <h1>Staff Profesional con Experiencia</h1>
+                <div class="features-desc">
+                    <div class="features-icon">
+                        <i>
+                            <ion-icon name="car-outline" class="fa"></ion-icon>
+                        </i>
+                    </div>
+                    <div class="features-text">
+                        <p>Nuestros conductores son profesionales <br> Tendras un viaje seguro de ids y regreso a tu
+                            lugar de destino </p>
+                    </div>
+                </div>
+                <h1>Agenda tu viaje</h1>
+                <div class="features-desc">
+                    <div class="features-icon">
+                        <i>
+                            <ion-icon name="calendar-number-outline" class="fa"></ion-icon>
+                        </i>
+                    </div>
+                    <div class="features-text">
+                        <p> Eliges la hora y lugar donde quieres ir <br> y uno de nuestros conductores estará
+                            disponible para tu viaje </p>
+                    </div>
+                </div>
+                <h1>Alianzas </h1>
+                <div class="features-desc">
+                    <div class="features-icon">
+                        <i>
+                            <ion-icon name="beer-outline" class="fa"></ion-icon>
+                        </i>
+                    </div>
+                    <div class="features-text">
+                        <p> Tenemos alianzas con distintos bares y restaurantes de la ciudad. <br> Podras revisar la
+                            carta y ofertas que ofrecen </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="container-page">
+        <div class="container-fluid">
+            <h1 class="title">Registro</h1>
+            <form action="/agregar" method="POST">
+                <div class="input-line-container">
+                    <span class="name-input">Nombre completo</span>
+                    <input type="text" name="name" class="input-line" id="" value="{{name}}">
+                </div>
+                <div>
+                    <div class="input-line-container">
+                        <span class="input-group-addon" id="sizing-addon1">Rut</span>
+                        <input type="name" name="rut" class="form-control" placeholder="Ej: 11111111-1">
+                    </div>
+                </div>
+                <div class="input-line-container">
+                    <span class="name-input">Correo</span>
+                    <input type="correo" name="correo" class="input-line" id="" value="{{correo}}">
+                </div>
+                <div class="input-line-container">
+                    <span class="name-input">Contraseña</span>
+                    <input type="password" name="password" class="input-line" id="" value="{{password}}">
+                </div>
+                <div class="input-line-container">
+                    <span class="name-input">Repita su Contraseña</span>
+                    <input type="password" name="confirm_password" class="input-line" id=""
+                        value="{{confirm_password}}">
+                </div>
+                <span class="textForm">Sexo:</span>
+
+                <input class="boxSexo" type="radio" name="sexo" value="Mujer" id="mujerForm">
+                <label class="labelsex activo" for="mujerForm">Mujer</label>
+
+                <input class="boxSexo" type="radio" name="sexo" value="Hombre" id="hombreForm">
+                <label class="labelsex" for="hombreForm">Hombre</label>
+
+                <input class="boxSexo" type="radio" name="sexo" value="Otros" id="otrosForm">
+                <label class="labelsex" for="otrosForm">Otros</label>
+                <br>
+                <div id="wrapper">
+                    <input type="submit" id="btnvalida" value="Registrarse" class="button-login btn btn-default">
+                    <br>
+                    <span class="button-second">¿Ya tienes una cuenta?</span>
+                </div>
+        </div>
+        </form>
+    </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="/js/code.js"></script>
+    <script type="module" src="/js/rut.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

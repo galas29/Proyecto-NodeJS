@@ -1,0 +1,42 @@
+#banner{
+    background: linear-gradient(rgba(0,0,0,0),#0c1b1a),url(/img/ciudad3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.cpage{
+    height: 87vh;
+    width: 20vw;
+    margin-top: 2%;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.8s;
+}
+
+.form-ruta{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.input-line{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #CBCBCB;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+}

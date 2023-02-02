@@ -1,0 +1,119 @@
+:root{--color:rgb(0, 143, 179);}
+body{
+  background-image: url("/img/450_1000.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.bg-box{
+    margin-top: 150px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: transparent;
+}
+.box{
+  background-color: rgba(0,0,0,0.70);
+  max-width: 600px;
+  height: 750px;
+  margin: auto;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px .1px rgba(0, 174, 180, 0.8);
+}
+.tab{
+  background-color: transparent;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 50px;
+  padding: 20px;
+}
+.tab-btn{
+  flex-grow: 1;
+  background-color: #292929;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-bottom: 2px solid #292929;
+  transition: .2s;
+  opacity:0.8;
+}
+.tab-btn:hover {opacity: 0.7;}
+.active{border-bottom-color: var(--color)}
+.form-controler{
+  padding: 0 25px;
+}
+.form-controler:not(input[type=checkbox]) {
+  text-align: center;
+}
+input[type=text]{
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #acac;
+  outline: none;
+  caret-color: white;
+  color: rgb(231, 231, 231);
+  font-size: 30px;
+  transition: .4s;
+  margin-bottom: 50px;
+}
+input[type=text]:focus::placeholder{
+  color: transparent;
+}
+input[type=text]:focus{
+  border-bottom-color: var(--color);
+}
+.main-atas{
+  text-align: center;
+  color: white;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+}
+.icon{
+  font-size: 7.5rem;
+}
+button[type=submit]{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color);
+  transition: .3s;
+  font-size: 30px;
+}
+button[type=submit]:hover{background-color: var(--color);}
+.btn-shadow{box-shadow: 0px 0px 7px .1px white}
+.link{
+  text-align: left;
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  color: rgba(146, 146, 146, 0.8);
+  padding: 2px;
+}
+.link:hover{color: darkgoldenrod}
+#register{display: none}
+.register{margin-bottom: 2rem;}
+input[type=checkbox]{text-align: left;zoom: .9}
+.label-text{color: rgb(194, 194, 194);font-size: 20px;padding-left: 7px}
+
+img{
+    margin-top: 100px;
+    height: 50px;
+}

@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    /* background: url(/img/chofer.jpg); */
+    background: linear-gradient(rgba(124, 120, 120, 0.5),#182020),url(/img/chofer.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo
+{
+    width: 140px;
+    position: fixed;
+    top: 0%;
+    left: 2%;
+    border-radius: 50px;
+}
+
+
+.features h1
+{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #04cfbb;
+}
+
+.features-desc
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features-icon .fa
+{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #f7fdfd;
+    border: 3px solid #009688;
+}
+.features-text p
+{
+    padding: 0 20px;
+    text-align: initial;
+    color: rgb(254, 255, 255);
+   
+}
+
+.container-page{
+    height: auto;
+    width: 31vw;
+    margin-top: 2%;
+    border-radius: 20px;
+    /*background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), linear-gradient(150deg, #13F4D9, #2AA4CE);*/
+    background: linear-gradient(rgba(0,0,0,0.5),#377272);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.8s;
+}
+
+.login-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+form{
+    width: 83%;
+    margin: auto;
+}
+
+.input-line-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.name-input{
+    font-size: 12px;
+}
+
+.input-line{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #CBCBCB;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.button-login{
+    width: 100%;
+    height: 45px;
+    border-radius: 55px;
+    background: linear-gradient(150deg, #13F4D9, #2AA4Ce);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.button-login:hover{
+    box-shadow: 0px 0px 8px #2aa5cea4;
+}
+
+
+
+.features-icon .fa:hover{
+    box-shadow: 0px 0px 8px #f9fbfca4;
+}
+
+
+.feature-box{
+    margin-left:-54%;
+    padding-top: 400px;
+}
+
+@media screen and (max-width:700px){
+    .container-page {
+        height: auto;
+        flex-basis: 70%;
+    }
+    .logo{
+        display: none;
+    }
+    .feature-box{
+        height: auto;
+        width: auto;
+        display: none;
+        margin-left: auto;
+
+    }
+    .title-text h1{
+        font-size: 35px;
+        
+    }
+    .features{
+        flex-basis: auto;
+    }
+   
+    .login-container{
+        flex-basis: 100%;
+
+    }
+    }
+
+@media screen and (min-width: 701px) and (max-width:1023px){
+    .container-page{
+        height: 95%;
+        height: auto;
+    }
+    .feature-box{
+        display: none;
+        
+    }
+    .title-text h1{
+        font-size: 35px;
+        display: block;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    
+    .login-container{
+        flex-basis: auto;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+}

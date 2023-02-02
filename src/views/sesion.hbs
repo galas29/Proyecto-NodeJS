@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="/css/sesion.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bg-box">
+        <div class="box">
+            <div class="form-controler" id="login">
+                <div class="main-atas">
+                    <img src="/img/blanco1.png" alt="">
+                    <h1 class="display">Inicio Sesion</h1>
+                </div>
+                <form action="/login" method="POST">
+                    <input type="text" placeholder="Correo">
+                    <input type="text" placeholder="Contraseña">
+                    <button type="submit" id="login-btn">Iniciar sesion</button>
+                    <button id="login-btn"><a href="/">Volver</a></button>
+                </form>
+            </div>
+            <div class="form-controler" id="register">
+                <div class="main-atas register">
+                    <i class="icon fas fa-user-plus"></i>
+                    <h1 class="display">Register Here</h1>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Email/Phone number">
+                    <input type="text" placeholder="Enter new password">
+                    <input type="text" placeholder="Confirm password">
+                    <button type="submit" id="login-btn">register</button>
+                    <div class="tengahan">
+                        <input type="checkbox" id="ch"><label for="ch" class="label-text">I accept the privacy
+                            policy</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js.js"></script>
+</body>
+
+</html>
